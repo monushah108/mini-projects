@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0;
+
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 30rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+nav{
+    padding: 1rem 2rem;
+}
+nav h3{
+    display: inline-block;
+}
+img{
+    height: 5rem;
+    vertical-align: middle;
+}
+main .players,
+main .option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+main .option img{
+    height: 3.6rem;
+}
+main .players .player-1{
+    transform: rotate(90deg);
+    transition: 1s;
+    
+}
+main .players .player-2{
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+main .players .rotate-img{
+    animation: rotate 0.28s ease infinite ;
+    transition: 1s;
+}
+@keyframes rotate{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+
+
+main .option > *{
+    opacity: 0.6;
+    cursor: pointer;
+}
+main .option > *:hover{
+    opacity: 1;
+}
+
