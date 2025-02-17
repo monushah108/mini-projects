@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-s);
+  background-color: rgb(17, 15, 15);
+  font-family: var(--font);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+:root {
+  --font-xs: 12px;
+  --font-s: 16px;
+  --font-l: 32px;
+  --font-xl: 64px;
+  --font: 'Poppins', sans-serif;
+  --normal-thicknes: 500;
+  --bold-thickness: 700;
+  --normal-400: 400;
+  --normal-300: 300;
+}
+
+header {
+  color: #fff;
+  padding: 30px;
+
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.right {
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+}
+.right .img {
+  background: url('https://adam-saad.github.io/huddle-landing-page/images/mockup.png')
+    no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 25rem;
+  
+}
+.left {
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+
+}
+.left h1 {
+  color: #fff;
+  font-size: calc(var(--font-s) * 1.5);
+  font-weight: var(--normal-400);
+}
+.left p {
+  color: #adadad;
+  font-size: var(--font-xs);
+  font-weight: var(--normal-300);
+  margin: 15px 0;
+}
+.left button {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 40px;
+}
+.wrapper .social{
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+  padding: 20px;
+}
+.social > *{
+  border-radius: 50%;
+  border: 1px solid #Fff;
+  padding: 10px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+@media (min-width:1200px){
+   
+  .main{
+    width: 100%;
+    height: 100%;
+  }
+  .left{
+    width: 50%;
+    height:auto;
+    position: relative;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+
+  }
+  .left .l-data h1{
+    font-size: var(--font-l);
+    font-weight: var(--normal-thicknes);
+    white-space: pre-wrap;
+  }
+  .right{
+    width: 50%;
+  }
+  .wrapper .social{
+    text-align: right;
+    margin-top: 25px;
+    width: 100%;
+    padding: 20px 20px 20px 0;
+  }
+}

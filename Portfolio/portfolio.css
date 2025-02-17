@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /* 2. Remove default
+margin */
+* {
+  margin: 0;
+} /* Typographic tweaks! 3. Add accessible line-height
+4. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+} /* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5rem 0;
+  
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  color: #adadad;
+  text-transform: capitalize;
+  
+
+}
+header ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #adadad;
+}
+header .logo span {
+  color: #8f6dff;
+}
+.sec1 {
+  width: 100%;
+  height: calc(100% - 20%);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.sec1 .left {
+  width: 50%;
+  height: 100%;
+}
+.sec1 .left .left-img {
+  background: url('https://img.freepik.com/premium-photo/online-business-illustration_863013-38704.jpg?w=740')
+    no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.sec1 .right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.sec1 .right .right-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.right .right-data h1 {
+  font-size: 3em;
+}
+.right .right-data p {
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 1.5em 0;
+}
+.right .right-data button {
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 25px;
+  background-color: #8f6dff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.sec2 {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 .card {
+  display: flex;
+  gap: 1.5rem;
+  width: 50rem;
+  height: 20rem;
+}
+
+.sec2 .card .card-img {
+  background: url('https://img.freepik.com/free-vector/programmer-concept-illustration_114360-3016.jpg?t=st=1714536678~exp=1714540278~hmac=ec84798c55a3c7e96603a3d659d2df0193ccbcd4dfaedecfdd32ba28e4f9c7a2&w=740')
+    no-repeat center;
+  background-size: cover;
+  width: 50%;
+}
+.sec2 .card .content {
+  width: 50%;
+  height: auto;
+  position: relative;
+  padding: 1.5rem 0;
+}
+.sec2 .card .content h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sec2 .card .content p {
+  margin: 1.5rem 0;
+  color: #adadad;
+}
+@media (max-width: 600px) {
+  .sec1 {
+    flex-direction: column-reverse;
+    font-size: 12px;
+  }
+  .sec1 .right {
+    width: 100%;
+    height: 50%;
+  }
+  .sec1 .left {
+    width: 100%;
+    height: 50%;
+  }
+  .sec1 .right .right-data {
+    position: relative;
+    transform: translate(0%, 0%);
+    left: 0;
+    top: 0;
+    padding: 12px;
+    text-align: center;
+  }
+  .right .right-data h1 {
+    font-size: 2.5em;
+  }
+  .sec2 {
+    height: auto;
+  }
+  .sec2 .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .sec2 .card .card-img {
+    height: 15rem;
+    width: 100%;
+    background-size: contain;
+  }
+  .sec2 .card .content {
+    height: 50%;
+    padding: 1em;
+    width: auto;
+    text-align: center;
+  }
+}
