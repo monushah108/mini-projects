@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*/ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(21, 21, 21);
+  font-family: var(--font);
+  font-size: var(--font-s);
+}
+/*
+  5. Improve media defaults
+*/
+img {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+:root {
+  --font-xs: 12px;
+  --font-s: 16px;
+  --font-l: 32px;
+  --font-xl: 64px;
+  --normal-font: 500;
+  --bold-font: 700;
+  --font: 'Poppins', sans-serif;
+}
+
+.main {
+  border-radius: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 20rem;
+}
+.main .left-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: chartreuse;
+  border-radius: 10px;
+  padding: 20px;
+}
+.left-box h5 {
+  opacity: 0.6;
+  font-weight: var(--normal-font);
+}
+.left-box .circle-box {
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  background-color: orange;
+  margin: 12px 0;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-box p {
+  font-size: var(--font-xs);
+  text-align: center;
+  margin: 12px 0;
+}
+.circle-box h3 {
+  opacity: 0.6;
+  font-size: var(--font-l);
+}
+.left-box .circle-box span{
+  opacity: .6;
+}
+.left-box h4 {
+  opacity: 0.6;
+  font-size: var(--font-l);
+}
+.right-box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.data-boxs .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  border-radius: 10px;
+  margin: 12px 0 ;
+}
+.right-box button {
+  padding: 10px 25px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 25px;
+  border: none;
+  font-weight: var(--bold-font);
+  letter-spacing: 2px;
+  background-color: orange;
+  color: #fff;
+}
+.data-boxs .box1{
+  background-color: #0000ffae;
+}
+.data-boxs .box2{
+  background-color: yellow;
+}
+.data-boxs .box3{
+  background-color: yellowgreen;
+}
+.data-boxs .box4{
+  background-color: chocolate;
+}
+.data-boxs .box span{
+  font-weight: var(--bold-font);
+  font-size: var(--font-xs);
+}
+.box span span{
+  opacity: .6;
+}
+.box h5::before{
+  content: '2 ';
+  
+}
+
+@media (min-width:1270px){
+   .main{
+     flex-direction: row;
+     flex-wrap: nowrap;
+   }
+   .main .left-box{
+     height: auto;
+   }
+}
