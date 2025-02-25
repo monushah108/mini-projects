@@ -1,0 +1,34 @@
+
+@media (min-width : 350px) and (max-width:780px){
+
+    nav{
+        font-size: 12px;
+        gap: 12px;
+    }
+    #mobile-space {
+        margin-bottom: 7.5rem;
+      }
+    .swiper-card {
+        flex-wrap: wrap;
+    }
+    .card-details > * {
+        padding: 5px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .card-2_details{
+        width: 230px;
+    }
+    .main_deatil-section .content-section-3 {
+        left: 1em;
+    }
+    footer > *{
+      flex-basis: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
