@@ -1,0 +1,166 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(45deg, #189ed3, #1e90ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* Form container styling */
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#title-form {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #189ed3;
+  box-shadow: 0 0 5px rgba(24, 158, 211, 0.5);
+}
+
+#submit-btn {
+  background-color: #189ed3;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+  background-color: #137a9f;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.show-error {
+  display: inline-block;
+}
+
+#voluntree-name {
+  display: flex;
+  gap: 20px;
+}
+
+#termCondition {
+  width: 16px;
+}
+
+#termCondition + p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 720px) {
+  .form form {
+      padding: 20px;
+      width: 100%;
+      margin: 0;
+  }
+
+  #title-form {
+      font-size: 22px;
+  }
+
+  p, label, #submit-btn {
+      font-size: 14px;
+  }
+}
+
+#msg-box {
+  width: 300px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+#msg-box.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+#done-Img {
+  width: 60px;
+  margin-bottom: 10px;
+}

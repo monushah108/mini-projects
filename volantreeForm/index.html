@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="msg-box">
+        <img id="done-Img" src="./blueTik.png" alt="" />
+        <p>Done!</p>
+      </div>
+
+      <div class="form">
+        <form action="#">
+          <h1 id="title-form">Voluntree Form</h1>
+          <div id="voluntree-name">
+            <label for="name">
+              <p>Name <span id="name-error"  class="error">*please enter name</span></p>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="your name"
+              />
+            </label>
+            <label for="last">
+              <p>Last Name <span id="last-error" class="error">*please enter last name</span></p>
+              <input
+                type="text"
+                id="last"
+                name="last_name"
+                placeholder="last name"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label for="email"
+              ><p>
+                Your Email <span id="email-error"  class="error">*please enter Valid emaill</span>
+              </p></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="your Email"
+            />
+          </div>
+          <div>
+            <label for="county"
+              ><p>
+                country <span id="country-error"  class="error">*please choose country</span>
+              </p></label
+            >
+            <select name="country" id="country" required>
+              <option value="">Select Country</option>
+            </select>
+          </div>
+          <div>
+            <label for="about">About you (optional)</label>
+            <textarea
+              name="desc"
+              id="about"
+              cols="30"
+              placeholder="tells us about you "
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="term" id="termCondition"  required />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+              rem! <span id="term-error" class="error">*click the checkbox</span>
+            </p>
+          </div>
+          <button id="submit-btn">submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
